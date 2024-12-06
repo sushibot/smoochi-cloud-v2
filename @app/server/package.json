@@ -1,0 +1,14 @@
+{
+  "name": "@smoochi/server",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@trpc/client": "11.0.0-rc.648",
+    "@trpc/server": "11.0.0-rc.648",
+    "hono": "^4.6.12"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

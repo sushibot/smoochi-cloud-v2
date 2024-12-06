@@ -1,0 +1,47 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@trpc/client':
+        specifier: 11.0.0-rc.648
+        version: 11.0.0-rc.648(@trpc/server@11.0.0-rc.648(typescript@5.7.2))(typescript@5.7.2)
+      '@trpc/server':
+        specifier: 11.0.0-rc.648
+        version: 11.0.0-rc.648(typescript@5.7.2)
+
+packages:
+
+  '@trpc/client@11.0.0-rc.648':
+    resolution: {integrity: sha512-k4FfLKvJwbosUH8KYyZkC50RJHYtIyJECi5WhRXsvaf9a6lgrTlcA+osq815zYcAHo7wEgR9E9UdSTrpLdAQFQ==}
+    peerDependencies:
+      '@trpc/server': 11.0.0-rc.648+77b4d8920
+      typescript: '>=5.6.2'
+
+  '@trpc/server@11.0.0-rc.648':
+    resolution: {integrity: sha512-nKW7FNM+QZrY/CVGlX3hFNIdUvbw6pwSJ+HzEF8GIeSJDKLHK7Ke1QJGI2mRW6oF9dCKMBXfuLaYY2dXfjfn7Q==}
+    peerDependencies:
+      typescript: '>=5.6.2'
+
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@trpc/client@11.0.0-rc.648(@trpc/server@11.0.0-rc.648(typescript@5.7.2))(typescript@5.7.2)':
+    dependencies:
+      '@trpc/server': 11.0.0-rc.648(typescript@5.7.2)
+      typescript: 5.7.2
+
+  '@trpc/server@11.0.0-rc.648(typescript@5.7.2)':
+    dependencies:
+      typescript: 5.7.2
+
+  typescript@5.7.2: {}
