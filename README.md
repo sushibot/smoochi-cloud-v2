@@ -15,8 +15,4 @@
 
 ## Running the project
 
-_I will provide you folks with environment variables._
-
-1. CD into backend, then run `docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d`.
-
-2. CD into frontend, then run `npm run dev`
+pnpm run dev
