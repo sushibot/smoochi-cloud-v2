@@ -3,7 +3,7 @@
 
 `infra/` holds all the code for the infrastructure
 `packages` holds the server and client code bases
-
+`packages/functions` are the lamda functions
 ### Frontend
 
 - [Vite + React with TypeScript](https://vite.dev/)

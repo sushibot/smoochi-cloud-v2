@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "CommonJS",
+      "lib": ["ESNext", "DOM"],
+      "moduleResolution": "Node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": ".",
+      "paths": {
+        "@smoochi/*": ["packages/*"]
+      },
+      "types":["sst"]
+    }
+  }
+  

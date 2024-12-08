@@ -12,12 +12,9 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0
       sst:
-        specifier: 3.3.47
-        version: 3.3.47(hono@4.6.12)
+        specifier: 3.3.54
+        version: 3.3.54(hono@4.6.12)
     devDependencies:
-      '@types/aws-lambda':
-        specifier: 8.10.146
-        version: 8.10.146
       prettier:
         specifier: 3.4.1
         version: 3.4.1
@@ -25,7 +22,7 @@ importers:
         specifier: ~5.6.2
         version: 5.6.3
 
-  '@app/client':
+  packages/client:
     dependencies:
       '@tanstack/react-query':
         specifier: ^5.62.2
@@ -74,17 +71,17 @@ importers:
         specifier: ^6.0.1
         version: 6.0.2(@types/node@22.10.1)
 
-  '@app/my-app':
+  packages/functions:
     dependencies:
-      hono:
-        specifier: ^4.6.12
-        version: 4.6.12
+      '@types/aws-lambda':
+        specifier: 8.10.146
+        version: 8.10.146
     devDependencies:
-      '@types/bun':
-        specifier: latest
-        version: 1.1.14
+      sst:
+        specifier: 3.3.47
+        version: 3.3.47(hono@4.6.12)
 
-  '@app/server':
+  packages/server:
     dependencies:
       '@trpc/client':
         specifier: 11.0.0-rc.648
@@ -1137,8 +1134,18 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  sst-darwin-arm64@3.3.54:
+    resolution: {integrity: sha512-f0Czmm8rhLTZUeVEO1bwQ8HYpfPEaFGVRq2fpbSeIQWW+dihmuIzoAhta5EXZlarhM2WBlf1ih0+aefOzPBZ3w==}
+    cpu: [arm64]
+    os: [darwin]
+
   sst-darwin-x64@3.3.47:
     resolution: {integrity: sha512-9qppOAEPpzB1mxcttjQmDnX2W7vNCa4PsauzGIm2UXStsswHNd/DhDcqUiwkGyloI7yy7bEdgImrAXiNW8W5Eg==}
+    cpu: [x64]
+    os: [darwin]
+
+  sst-darwin-x64@3.3.54:
+    resolution: {integrity: sha512-NZM1VX1AnRoqOnfsOaZPBy4am86QjY8q+khJ31q4n62yAe0aiRyXpTCc6m/soAba5YCw1Ngm83MoYJUJVavNOA==}
     cpu: [x64]
     os: [darwin]
 
@@ -1147,8 +1154,18 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  sst-linux-arm64@3.3.54:
+    resolution: {integrity: sha512-+l1LGdZawPCdp++A9nZoDIDsm2xQowIONKQTq3QYD3TgvJDa0WnqY0mLhE33lQbheArbzj17vlaxlenwoFiWWg==}
+    cpu: [arm64]
+    os: [linux]
+
   sst-linux-x64@3.3.47:
     resolution: {integrity: sha512-WJMuwDpju1zdZZqmbPIt+YszmO6VqCojn+3fiaUPSUg8Pm+DEUKAEggjlrBgdUkOOqNBYkIXq7N0YM8cs7tw6Q==}
+    cpu: [x64]
+    os: [linux]
+
+  sst-linux-x64@3.3.54:
+    resolution: {integrity: sha512-m6jihP/+9Wf71vq2fvwmNrCoB3lkgEwk8FBgB9qGe52/jrwkLXgbhaANT5M0sbqrl/PAoaW3iUi3GJdgC3PD3g==}
     cpu: [x64]
     os: [linux]
 
@@ -1157,8 +1174,25 @@ packages:
     cpu: [x86]
     os: [linux]
 
+  sst-linux-x86@3.3.54:
+    resolution: {integrity: sha512-VpXvm9J64F8A20dhu5188I7if9WFk0gW/ZWYSHoWux6IQSTXfrHI7+0vbVZeH+DSTFes4OfJKCZu0mTNjWpu4w==}
+    cpu: [x86]
+    os: [linux]
+
   sst@3.3.47:
     resolution: {integrity: sha512-7P2LbYv9WxW1y9l9cVKI547oUihKjvIwJ7Vy0xnmmSSnOp1AuD2BJQqzpldH5UgB2fWZND0MsXkMR15dut4zyw==}
+    hasBin: true
+    peerDependencies:
+      hono: 4.x
+      valibot: 0.30.x
+    peerDependenciesMeta:
+      hono:
+        optional: true
+      valibot:
+        optional: true
+
+  sst@3.3.54:
+    resolution: {integrity: sha512-5A4iD+nbgbMZ89f2UPqpFdRFmmAqQg4qPvTboIT30ZgOMSUaG0dy+ce9m6xBAwC3tu8erqoH9PNj2lOHNHmjpg==}
     hasBin: true
     peerDependencies:
       hono: 4.x
@@ -2296,16 +2330,31 @@ snapshots:
   sst-darwin-arm64@3.3.47:
     optional: true
 
+  sst-darwin-arm64@3.3.54:
+    optional: true
+
   sst-darwin-x64@3.3.47:
+    optional: true
+
+  sst-darwin-x64@3.3.54:
     optional: true
 
   sst-linux-arm64@3.3.47:
     optional: true
 
+  sst-linux-arm64@3.3.54:
+    optional: true
+
   sst-linux-x64@3.3.47:
     optional: true
 
+  sst-linux-x64@3.3.54:
+    optional: true
+
   sst-linux-x86@3.3.47:
+    optional: true
+
+  sst-linux-x86@3.3.54:
     optional: true
 
   sst@3.3.47(hono@4.6.12):
@@ -2320,6 +2369,19 @@ snapshots:
       sst-linux-arm64: 3.3.47
       sst-linux-x64: 3.3.47
       sst-linux-x86: 3.3.47
+
+  sst@3.3.54(hono@4.6.12):
+    dependencies:
+      aws4fetch: 1.0.20
+      jose: 5.2.3
+      openid-client: 5.6.4
+    optionalDependencies:
+      hono: 4.6.12
+      sst-darwin-arm64: 3.3.54
+      sst-darwin-x64: 3.3.54
+      sst-linux-arm64: 3.3.54
+      sst-linux-x64: 3.3.54
+      sst-linux-x86: 3.3.54
 
   string-width@4.2.3:
     dependencies:

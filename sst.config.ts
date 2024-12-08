@@ -11,15 +11,7 @@ export default $config({
     };
   },
   async run() {
-    const bucket = new sst.aws.Bucket("smoochi-bucket")
-    
-    new sst.aws.Function('MyFunction', {
-      handler: 'index.handler'
-    })
-
-    new sst.aws.React("MyFrontend", {
-      path: '@app/client',
-      buildCommand: 'smoochi client build'
-    })
+    await import("./infra/storage")
+    await import("./infra/api")
   },
 });
